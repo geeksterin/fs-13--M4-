@@ -1,0 +1,22 @@
+.text{
+    color: black;
+    background-color: red;
+}
+.text:hover{
+    border: 2px solid white;
+}
+
+.text-updated{
+    color: black;
+    background-color: aqua;
+}
+
+
+.my-button{
+    background-color: brown;
+    color: white;
+    
+}
+.body{
+    background-color: lightpink;
+}
