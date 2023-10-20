@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function parent() {
+        //     var hoisted = "I'm a variable";
+        //     function hoisted() {
+        //         return "I'm a function";
+        //     }
+        //     return hoisted();
+        // }
+        // console.log(parent());
+
+        //////////////////////////////
+        // alert(foo());
+        // function foo() {
+        //     var bar = function () {
+        //         return 3;
+        //     };
+        //     return bar();
+        //     var bar = function () {
+        //         return 8;
+        //     };
+        // }
+
+        //////////////////////////////
+        // var myVar = 'foo';
+        // (function () {
+        //     console.log('Original value was: ' + myVar);
+        //     var myVar = 'bar';
+        //     console.log('New value is: ' + myVar);
+        // })();
+
+        //////////////////////////////
+        // greet1();
+        // greet2();
+        // greet3();
+        // greet4();
+
+        // // function declaration is fully hoisted
+        // function greet1() {
+        //     console.log("HELLO");
+        // }
+
+        // // TypeError: greet1 is not a function
+        // var greet2 = function () {
+        //     console.log("HELLO");
+        // };
+
+        // // ReferenceError: Cannot access 'greet3' before initialization
+        // let greet3 = function () {
+        //     console.log("HELLO");
+        // };
+
+        // // ReferenceError: Cannot access 'greet4' before initialization
+        // const greet4 = function () {
+        //     console.log("HELLO");
+        // };
+
+    </script>
+</body>
+
+</html>
