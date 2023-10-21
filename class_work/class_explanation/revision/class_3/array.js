@@ -187,11 +187,45 @@
 // ============================================================================================
 // find
 
-const arr = [3,4,5,12,56,90,8];
-const tempArr = arr.find( function(age){
-    console.log(age);
-    if( age>=54 ) return true;
-} );
-console.log(arr);
-// NaN,undefined,null => falsly
-console.log(tempArr);
+// const arr = [3,4,5,12,56,90,8];
+// const tempArr = arr.find( function(age){
+//     console.log(age);
+//     if( age>=54 ) return true;
+// } );
+// console.log(arr);
+// // NaN,undefined,null => falsly
+// console.log(tempArr);
+
+
+// =================================================================
+// splice
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(fruits);
+// // 1st arg => index
+// // 2nd arg => number of element which we wants to remove
+// fruits.splice(2,1,"watermelon","grapes");
+// console.log(fruits);
+// fruits.splice(2, 0, "Lemon", "Kiwi");
+
+// we want to check wheter the array contains all +ve numbers or not
+
+// every and some will return boolean values ( true or false)
+
+// every 
+// const arr = [1,-2,3,-4,5];
+// const result = arr.every(function(value){
+//     console.log(value);
+//     if( value>0 )   return true;
+//     else return false;
+// });
+
+// console.log(result);
+
+// const arr = [1,-2,3,-4,5];
+// const result = arr.some( function(value){
+//     console.log(value);
+//     if( value>0 )   return false;
+//     else return true;
+// } );
+// console.log(result);
