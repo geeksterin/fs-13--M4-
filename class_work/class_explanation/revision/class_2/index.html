@@ -7,25 +7,29 @@
     <title>Document</title>
 </head>
 
+<!-- callstack -->
+<!-- return type of parent -->
 <body>
     <script>
         // function parent() {
-        //     var hoisted = "I'm a variable";
+        //     // var hoisted = "1";
         //     function hoisted() {
-        //         return "I'm a function";
+        //         return "2";
         //     }
         //     return hoisted();
+        //     // return "2";
         // }
         // console.log(parent());
 
         //////////////////////////////
         // alert(foo());
         // function foo() {
-        //     var bar = function () {
+        //     var bar;
+        //     bar = function () {
         //         return 3;
         //     };
         //     return bar();
-        //     var bar = function () {
+        //     bar = function () {
         //         return 8;
         //     };
         // }
@@ -33,36 +37,42 @@
         //////////////////////////////
         // var myVar = 'foo';
         // (function () {
-        //     console.log('Original value was: ' + myVar);
-        //     var myVar = 'bar';
-        //     console.log('New value is: ' + myVar);
-        // })();
-
+        //     // var myVar;
+        //     console.log('Original value was: ' + myVar);  // undefined
+        //     myVar = 'bar';
+        //     console.log('New value is: ' + myVar); // bar
+        // })(); // IIFE
+        // console.log(myVar);  // bar
         //////////////////////////////
-        // greet1();
-        // greet2();
+        // greet1(); // HELLO
+        // var greet2;
+        // undefined(); // error ???
+// TDZ
+        console.log(greet2); // undefined
+        console.log(greet3); // 
+        // greet2(); // 
         // greet3();
         // greet4();
 
-        // // function declaration is fully hoisted
+        
         // function greet1() {
         //     console.log("HELLO");
         // }
 
-        // // TypeError: greet1 is not a function
-        // var greet2 = function () {
-        //     console.log("HELLO");
-        // };
+        
+        var greet2 = function () {
+            console.log("HELLO");
+        };
 
-        // // ReferenceError: Cannot access 'greet3' before initialization
-        // let greet3 = function () {
-        //     console.log("HELLO");
-        // };
+        
+        let greet3 = function () {
+            console.log("HELLO");
+        };
 
-        // // ReferenceError: Cannot access 'greet4' before initialization
-        // const greet4 = function () {
-        //     console.log("HELLO");
-        // };
+        
+        const greet4 = function () {
+            console.log("HELLO");
+        };
 
     </script>
 </body>
