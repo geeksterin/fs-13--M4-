@@ -1,0 +1,54 @@
+Array: Colleciton of homogeneous data types
+Objects ? Collection of hetrogeneous data types, in the form of key - value pairs
+
+
+Name: John Doe
+Age: 30
+Email: john @email.com
+Phone: 9876543210
+Enronllment No: 123
+Address: 123 ABC Street, NY
+
+
+let student = {
+    name: "John Doe",
+    age: 30,
+    email: "john@example.com",
+    phone: "9806232420",
+    hasDriversLicense: true,
+    chosenSubjects: ["DSA", "Distributed System", "Networking"],
+    address: {
+        addressLine1: "House No 123",
+        addressLine2: "ABC Street",
+        city: "Indore",
+        state: "Madhya Pradesh",
+        country: "India"
+    },
+    greet: function () {
+        console.log("Hi there");
+    },
+    timestamp: new Date()
+}
+
+let prices = [10, 20, 30]
+let users = ["John", "Jack", "Alex"]
+let user = ["John", 30, 123]
+
+
+Dot notation
+Object-name.key-name
+student.x
+
+
+Square bracket notation
+Object[key-name/variable holding the key name]
+student[x]
+
+
+Create
+Read
+Update
+Delete
+delete object-name.key-name
+
+JSON (JavaScript Object Notation)

@@ -1,0 +1,80 @@
+[
+  {
+    "name": "John Doe",
+    "age": 30,
+    "email": "john@email.com",
+    "chosenSubjects": ["DSA", "Networking"],
+    "address": {
+      "addressLine1": "House No 123",
+      "addressLine2": "ABC Street",
+      "city": "Indore",
+      "state": "Madhya Pradesh",
+      "country": "India"
+    }
+  },
+  {
+    "name": "John Doe",
+    "age": 30,
+    "email": "john@email.com",
+    "chosenSubjects": ["DSA", "Networking"],
+    "address": {
+      "addressLine1": "House No 123",
+      "addressLine2": "ABC Street",
+      "city": "Indore",
+      "state": "Madhya Pradesh",
+      "country": "India"
+    }
+  },
+  {
+    "name": "John Doe",
+    "age": 30,
+    "email": "john@email.com",
+    "chosenSubjects": ["DSA", "Networking"],
+    "address": {
+      "addressLine1": "House No 123",
+      "addressLine2": "ABC Street",
+      "city": "Indore",
+      "state": "Madhya Pradesh",
+      "country": "India"
+    }
+  },
+  {
+    "name": "John Doe",
+    "age": 30,
+    "email": "john@email.com",
+    "chosenSubjects": ["DSA", "Networking"],
+    "address": {
+      "addressLine1": "House No 123",
+      "addressLine2": "ABC Street",
+      "city": "Indore",
+      "state": "Madhya Pradesh",
+      "country": "India"
+    }
+  },
+  {
+    "name": "John Doe",
+    "age": 30,
+    "email": "john@email.com",
+    "chosenSubjects": ["DSA", "Networking"],
+    "address": {
+      "addressLine1": "House No 123",
+      "addressLine2": "ABC Street",
+      "city": "Indore",
+      "state": "Madhya Pradesh",
+      "country": "India"
+    }
+  },
+  {
+    "name": "John Doe",
+    "age": 30,
+    "email": "john@email.com",
+    "chosenSubjects": ["DSA", "Networking"],
+    "address": {
+      "addressLine1": "House No 123",
+      "addressLine2": "ABC Street",
+      "city": "Indore",
+      "state": "Madhya Pradesh",
+      "country": "India"
+    }
+  }
+]
