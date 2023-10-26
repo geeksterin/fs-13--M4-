@@ -50,13 +50,16 @@ function sum(x, y) {
 
 function calculateSimpleInterest(p, r, t) {
     return p * r * t / 100;
-
 }
 
 // const calcSiArrow = (p, r, t) => {
 //     const si = p * r * t / 100;
 //     return si;
 // };
+
+const variableName = () => {
+    return p * r * t / 100;
+}
 
 const calcSiArrow = (p, r, t) => p * r * t / 100;
 
