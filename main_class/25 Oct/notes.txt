@@ -1,0 +1,39 @@
+Functions? A set of instructions written to perform a specific task
+
+Syntax : 
+function <function-name>(args) {
+    // Function body
+}
+
+
+Simple Interest : p * r * t /100
+
+function calculateSimpleInterest() {
+    const p = 5000;
+    const r = 4;
+    const t = 3;
+
+    const si = p * r * t / 100;
+    console.log(si);
+}
+
+Types of fn(functions)
+
+Statement : Writing a function with keyword "function" and a name is given to it
+Expression : Assigining a fn to a variable
+Anonymous : Fn with no name
+
+NOTE : ONLY STATEMENT FUNCTIONS ARE HOISTED NOT THE EXPRESSION ONES
+
+Context : Environment where the code runs
+1. Memory Allocation Phase
+2. Code Execution phase
+
+Arrow Function (ES6 Functions) : 
+const si = (args) => {
+    // function body
+}
+
+HOF : A fn which takes another fn as argument or it returns another function
+
+IIFE (Immeidately Invoked Function Expression) / Self Calling function
