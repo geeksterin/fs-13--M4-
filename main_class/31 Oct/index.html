@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Dom - Part 2</h1>
+    <article
+      onmouseover="console.log('Mouse over');"
+      onmouseenter="console.log('Mouse enter');"
+    >
+      <p>
+        Inside Article 1 - Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Dolore dignissimos maiores ex iure accusamus laboriosam
+        perspiciatis saepe nobis ab nulla, molestiae quis temporibus optio
+        corporis quia ipsam sequi iste modi!
+      </p>
+      <p>
+        Inside Article 2 - Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Eius soluta ullam a quod cum, quae dolore doloremque inventore ea
+        neque tempore distinctio obcaecati suscipit nulla nisi quaerat delectus,
+        atque rem?
+      </p>
+      <p>
+        Inside Article 3 - Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Eius soluta ullam a quod cum, quae dolore doloremque inventore ea
+        neque tempore distinctio obcaecati suscipit nulla nisi quaerat delectus,
+        atque rem?
+      </p>
+      <p>
+        Inside Article 4 - Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Eius soluta ullam a quod cum, quae dolore doloremque inventore ea
+        neque tempore distinctio obcaecati suscipit nulla nisi quaerat delectus,
+        atque rem?
+      </p>
+    </article>
+    <p
+      style="background-color: green"
+      onmousemove="console.log('Mouse moving on paragrph')"
+    >
+      Outside article 1 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Quibusdam quasi ut ipsa tempora itaque aliquid aperiam fuga cupiditate
+      voluptas! Enim, dolore blanditiis fuga maiores ducimus modi numquam
+      voluptas ratione autem?
+    </p>
+    <a href="www.google.com">Click Here</a>
+    <button onclick="alert('Button clicked');">Click here</button>
+    <input type="text" onkeydown="onHandleKeyDown(event)" />
+    <input type="password" onkeydown="onHandleKeyDown(event)" />
+    <script src="script.js"></script>
+    <style>
+      article {
+        background-color: blue;
+      }
+      article p {
+        background-color: red;
+      }
+    </style>
+  </body>
+</html>
