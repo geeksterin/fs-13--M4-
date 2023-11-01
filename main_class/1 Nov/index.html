@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events & Practice Questions</title>
+    <style>
+      .converter-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        background-color: #f9f9f9;
+        width: 251px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Events & Practice Questions</h1>
+    <div class="converter-container">
+      <div>
+        <label for="amount">Amount</label>
+        <input
+          onchange="convertCurrency()"
+          onkeyup="convertCurrency();"
+          type="number"
+          id="amount"
+        />
+      </div>
+      <div>
+        <label for="fromCurrency">From</label>
+        <select onchange="convertCurrency()" id="fromCurrency">
+          <option value="usd">USD</option>
+          <option value="eur">EUR</option>
+          <option value="gbp">GBP</option>
+        </select>
+      </div>
+      <div>
+        <label for="toCurrency">To</label>
+        <select onchange="convertCurrency()" id="toCurrency">
+          <option value="usd">USD</option>
+          <option value="eur">EUR</option>
+          <option value="gbp">GBP</option>
+        </select>
+      </div>
+      <div>Converted Amount <span id="convertedValue"></span></div>
+    </div>
+    <div>
+      <input type="text" id="demoInput" />
+      <div>
+        <button id="decrease">Decrease (-)</button>
+        <span id="quantity">1</span>
+        <button id="increase">Increase (+)</button>
+      </div>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
