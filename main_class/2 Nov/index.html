@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM & Events - Continued..</title>
+    <style>
+      #div1 {
+        width: 500px;
+        height: 500px;
+        background: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #div2 {
+        width: 300px;
+        height: 300px;
+        background: blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #div3 {
+        width: 150px;
+        height: 150px;
+        background: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .char-counter-container {
+        width: 500px;
+        background-color: lightpink;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+    </style>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <h1>DOM & Events - Continued..</h1>
+    <div id="div1">
+      <div id="div2">
+        <div id="div3">
+          <button id="btn">Click Me</button>
+        </div>
+      </div>
+    </div>
+    <div class="char-counter-container">
+      <h1>Character Counter</h1>
+      <textarea id="inputArea" rows="4" maxlength="50"></textarea>
+      <div>
+        <div>Total Characters <span id="totalChars"></span></div>
+        <div>Remaining Characters <span id="remainingChars"></span></div>
+      </div>
+    </div>
+  </body>
+</html>
