@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky Notes</title>
+    <script defer src="script.js"></script>
+    <style>
+      main {
+        display: flex;
+      }
+      section {
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      section:first-child {
+        background: #d1dce7;
+      }
+      .notes-container {
+        width: 100%;
+      }
+      .note {
+        width: 80%;
+        background-color: green;
+        padding: 10px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      .close-btn {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <textarea
+          id="textArea"
+          rows="8"
+          placeholder="Write a note here"
+        ></textarea>
+        <input id="colorPicker" type="color" />
+        <button id="addNoteBtn">Add note</button>
+      </section>
+      <section>
+        <h1>Your Notes</h1>
+        <div id="notesContainer" class="notes-container">
+          
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
