@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leaderboard</title>
+    <script defer src="script.js"></script>
+  </head>
+  <style>
+    input {
+      height: 25px;
+      border: 1px solid lightgreen;
+    }
+    #submitBtn {
+      background-color: lightgreen;
+      height: 30px;
+    }
+    .error-msg {
+      color: #ff7864;
+      display: none;
+    }
+    main {
+      text-align: center;
+    }
+    .card {
+      background-color: lightgreen;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    button {
+      all: unset;
+      border-radius: 50%;
+      background: lightgreen;
+      width: 60px;
+      height: 60px;
+      transition: all 0.5s ease;
+      margin-bottom: 20px;
+    }
+  </style>
+  <body>
+    <main>
+      <h1>LeaderBoard</h1>
+      <form id="addPlayerScoreForm">
+        <input type="text" placeholder="First Name" />
+        <input type="text" placeholder="Last Name" />
+        <input type="text" placeholder="Country" />
+        <input type="number" placeholder="Player Score" />
+        <input id="submitBtn" type="submit" value="Add Player" />
+      </form>
+      <p class="error-msg">All fields are required</p>
+      <div id="cardsContainer" class="scorecard-container">
+
+      </div>
+    </main>
+  </body>
+</html>
