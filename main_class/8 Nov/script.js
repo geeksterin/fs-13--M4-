@@ -41,21 +41,26 @@ function operation3() {
 
 // console.log("After all op");
 function test() {
-    console.log("A");
-    setTimeout(() => {
-      console.log("B");
-    }, 0);
-    console.log("C");
-    console.log("D");
+  console.log("A");
+  setTimeout(() => {
+    console.log("B");
+  }, 0);
+  console.log("C");
+  console.log("D");
 }
 function test2() {
-    console.log("TEST2")
+  console.log("TEST2");
 }
 function test3() {
-    console.log("TEST3")
+  console.log("TEST3");
 }
-
 
 test();
 test2();
 test3();
+
+for (let i = 0; i < 5; i++) {
+  setTimeout(() => {
+    console.log("ABCD", i);
+  }, 1_000);
+}
