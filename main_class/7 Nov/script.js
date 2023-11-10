@@ -13,7 +13,7 @@ const onCtaContainerClick = (e) => {
   const btn = e.target;
   const buttonText = e.target.innerText;
   if (buttonText === "🗑") {
-    btn.parentElement.parentElement.remove()
+    btn.parentElement.parentElement.remove();
   } else if (buttonText === "+5") {
   } else if (buttonText === "-5") {
   }
@@ -76,4 +76,18 @@ addPlayerScoreForm.addEventListener("submit", (e) => {
   cardsContainer.appendChild(card);
   e.target.reset();
   sortLeaderboard();
+});
+
+const card = createCard();
+document.body.append(card);
+const card2 = createCard();
+document.body.append(card2);
+document.body.append(card);
+
+Array.sort((a, b) => {
+  if (b > a) {
+    return -1;
+  } else if (b <=a ) {
+    return 1;
+  }
 });
