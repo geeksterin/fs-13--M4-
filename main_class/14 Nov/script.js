@@ -82,8 +82,8 @@ Promise.all(arrayOfPokemonDetailPromises).then((pokemonDetails) => {
   const searchParams = new URLSearchParams(window.location.search);
   if (searchParams.get("pokemonType")) {
     console.log(pokemonList);
-    
-    // pokemonList.filter(pokemon => pokemon.category.includes(searchParams));
+    // filter(some to match type of pokemon in the array)
+    // pokemonList.filter(pokemon => pokemon.)
   }
 
   pokemonList.forEach((pokemon) => {
