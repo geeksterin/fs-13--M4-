@@ -66,15 +66,19 @@ const fetchPokemonDetails = (id) => {
 };
 
 const arrayOfPokemonDetailPromises = [];
+
 for (let i = 1; i <= 50; i++) {
   const pokemonPromise = fetchPokemonDetails(i);
   arrayOfPokemonDetailPromises.push(pokemonPromise);
 }
+
 let pokemonList = [];
 const pokemonContainer = document.getElementById("pokemonContainer");
+
 Promise.all(arrayOfPokemonDetailPromises).then((pokemonDetails) => {
   //   console.log(pokemonDetails);
   pokemonList = pokemonDetails;
+  console.log(window.location.search)
   const searchParams = new URLSearchParams(window.location.search);
   if (searchParams.get("pokemonType")) {
     console.log(pokemonList);
