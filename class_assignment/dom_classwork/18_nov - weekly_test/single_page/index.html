@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            border: 2px solid black;
+        }
+
+        #continer {
+            border: 2px solid red;
+        }
+
+        #signup_container,
+        #signin_container {
+            display: none;
+        }
+
+        #logout {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <button id="signup">sign up</button>
+        <button id="signin">sign in</button>
+        <button id="logout">logout</button>
+    </header>
+    <div id="continer">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam labore, consequuntur cum libero expedita
+        odit. Esse accusamus cumque illo, nesciunt minima, distinctio laboriosam quisquam blanditiis adipisci, assumenda
+        voluptatibus iste! Consequuntur.
+    </div>
+    <div id="signup_container">
+        <form id="signup_form">
+            <input type="text" placeholder="username" id="username">
+            <input type="email" placeholder="email" id="email">
+            <input type="password" placeholder="password" id="password">
+            <input type="submit" value="sign up">
+        </form>
+    </div>
+    <div id="signin_container">
+        <form id="signin_form">
+            <input type="email" name="" id="login_email">
+            <input type="password" name="" id="login_password">
+            <input type="submit" value="sign in">
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
