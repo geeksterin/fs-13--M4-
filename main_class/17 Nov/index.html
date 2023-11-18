@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infinite Scroll</title>
+    <script defer src="script.js"></script>
+    <style>
+      img {
+        width: 50%;
+        margin-bottom: 20px;
+      }
+      section {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      .loader {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Infinite Scroll</h1>
+    <img
+      class="loader"
+      id="loader"
+      src="https://media.tenor.com/siXiZO-F1awAAAAC/loader-waiting.gif"
+    />
+    <main>
+      <section id="imagesContainer"></section>
+    </main>
+  </body>
+</html>
