@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="movieName">
+    <button id="btn">search</button>
+    <div id="container"></div>
+    <script>
+        const movieNameTag = document.getElementById("movieName");
+        const containerTag = document.getElementById("container");
+        const searchBtn = document.getElementById("btn");
+        searchBtn.addEventListener('click', async function (e) {
+            const title = movieNameTag.value;
+
+            try {
+                const result = await fetch(`https://www.omdbapi.com/?s=${title}&apikey=f395778a`);
+                const data = await result.json();
+                console.log(data, typeof data)
+
+                data.Search.forEach(movie => {
+                    console.log(movie);
+                    const divTag = document.createElement("div");
+                    const yearTag = document.createElement("p");
+                    const titleTag = document.createElement("p");
+                    const imageTag = document.createElement("img");
+
+                    if (movie.Poster === 'N/A')
+                        imageTag.setAttribute("src",'');
+                    else
+                        imageTag.setAttribute("src", movie.Poster);
+
+                    titleTag.textContent = movie.Title;
+                    yearTag.textContent = movie.Year;
+                    divTag.appendChild(imageTag);
+                    divTag.appendChild(titleTag);
+                    divTag.appendChild(yearTag);
+                    divTag.style.border = "2px soild black"
+                    containerTag.appendChild(divTag);
+                })
+
+            } catch (error) {
+                console.error(error);
+            }
+        })
+    </script>
+</body>
+
+</html>
